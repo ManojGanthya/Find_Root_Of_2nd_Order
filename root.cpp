@@ -29,16 +29,16 @@ int main(){
 
     }else if(d > 0){
       // Root are real and different
-      Root = (-b + sqrt(d))/a;
-      Root2 = (-b - sqrt(d))/a;
+      Root = (-b + sqrt(d))/(2*a);
+      Root2 = (-b - sqrt(d))/(2*a);
       cout<<"Root are -->> "<<Root<<", "<<Root2;
 
     }else{
         // Root are complex
         cout<<"Root are complex";
         d = d * (-1);
-        float Root11 = (-b/a);
-        float Root12 = (sqrt(d)/a);
+        float Root11 = (-b/(2*a));
+        float Root12 = (sqrt(d)/(2*a));
         cout<<"Root are -->>"<<Root11 <<" + i"<<Root12<<" and "<<Root11<<" - i"<<Root12;
     }
 
